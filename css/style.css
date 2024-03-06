@@ -1,0 +1,34 @@
+/* Imported fonts from Google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+/* font-family: "Noto Sans", sans-serif; */
+
+/* Global and menu Style */
+body{
+    font-family: "Noto Sans", sans-serif;
+}
+.wrapper{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+/* Index/Watch Style */
+
+/* Characters Style */
+
+.characterList .characterCard{
+    display: flex;
+    margin-bottom: 60px;
+}
+.characterList .characterCard .characterImage img{
+    width: 100%;
+    display: block;
+}
+.characterList .characterCard .characterImage{
+    max-width: 400px;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+.characterList .characterCard .texts{
+ margin-left: 30px;
+}
+/* Storyboard Style */

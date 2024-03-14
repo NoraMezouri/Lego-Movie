@@ -6,30 +6,51 @@
 /* Global and menu Style */
 body{
     font-family: "Noto Sans", sans-serif;
+    background: #F5F5F5;
 }
 .wrapper{
-    max-width: 1280px;
+    max-width: 1200px;
     margin: 0 auto;
 }
+/* Header style */
+header{
+    height: 100px;
+    background: #FFCF00;
+    margin-bottom: 80px;
+}
+
+
 /* Index/Watch Style */
 
 /* Characters Style */
 
 .characterList .characterCard{
     display: flex;
+    margin: 0 auto;
     margin-bottom: 60px;
 }
-.characterList .characterCard .characterImage img{
-    width: 100%;
+model-viewer {
+    flex-basis: 300px;
+    flex-shrink: 0;
+    height: 350px;
     display: block;
+    margin-right: 40px;
+    display: flex;
+    justify-content: center;
 }
-.characterList .characterCard .characterImage{
-    max-width: 300px;
-    box-sizing: border-box;
+model-viewer::after {
+    content: " ";
+    height: 150px;
+    width: 80%;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    position: absolute;
+    z-index: -1;
 }
 .characterList .characterCard .texts{
  margin-left: 30px;
  line-height: 30px;
+ width: fit-content;
 letter-spacing: 1.3px;
 display: flex;
 justify-content: center;
@@ -42,8 +63,11 @@ flex-direction: column;
     width: 100%;
     margin-bottom: 30px;
 }
+.characterList .characterCard .name .bold{
+    font-weight: bold;
+}
 .characterList .characterCard .texts .description{
-    width: 80%;
+    width: 100%;
 }
 /* Storyboard Style */
 

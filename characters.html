@@ -10,7 +10,23 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+    <style>
+        model-viewer {
+            width: 200px;
+            height: 300px;
+        }
 
+        model-viewer::after {
+            content: " ";
+            height: 100px;
+            background: red;
+            border-radius: 10px;
+            position: absolute;
+            top: 100px;
+            z-index: -1;
+        }
+    </style>
 </head>
 <body>
 
@@ -37,12 +53,11 @@
 
             <!-- Character cards Start-->
             <article class="characterCard">
-                <figure class="characterImage">
-                    <img src="img/LMCard_Blue.png" alt="An image of Henry">
-                </figure>
+                <model-viewer src="LegoBase.glb" ar shadow-intensity="1" camera-controls
+                touch-action="pan-y"></model-viewer>
                 <section class="texts">
                     <p class="name">
-                        Henry <span class="LastName">LastName</span>
+                        <span class="bold">Henry</span> LastName
                     </p>
                     <p class="description">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi pariatur voluptas ullam ipsum rerum beatae ut quam vel asperiores
@@ -53,12 +68,11 @@
             </article>
 
             <article class="characterCard">
-                <figure class="characterImage">
-                    <img src="img/LMCard_Grey.png" alt="An image of Caleb">
-                </figure>
+                <model-viewer src="LegoBase.glb" ar shadow-intensity="1" camera-controls
+                touch-action="pan-y"></model-viewer>
                 <section class="texts">
                     <p class="name">
-                        Caleb <span class="LastName">LastName</span>
+                        <span class="bold">Caleb</span> LastName
                     </p>
                     <p class="description">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi pariatur voluptas ullam ipsum rerum beatae ut quam vel asperiores
@@ -68,21 +82,6 @@
                 </section>
             </article>
 
-            <article class="characterCard">
-                <figure class="characterImage">
-                    <img src="img/LMCard_Red.png" alt="An image of somebody">
-                </figure>
-                <section class="texts">
-                    <p class="name">
-                        FirstName <span class="LastName">LastName</span>
-                    </p>
-                    <p class="description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi pariatur voluptas ullam ipsum rerum beatae ut quam vel asperiores
-                         sequi soluta iste adipisci blanditiis quis odit veritatis incidunt fuga laboriosam animi laborum quia expedita, tempore eaque! Dolor
-                          excepturi provident esse ab libero ullam unde delectus temporibus vel voluptatem? Quae, obcaecati?
-                    </p>
-                </section>
-            </article>
             <!-- Character cards End-->
 
         </section>

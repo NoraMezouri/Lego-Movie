@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
     <meta charset="UTF-8">
@@ -11,9 +12,27 @@
     <link rel="stylesheet" href="css/style.css">
 
 
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+    <style>
+        model-viewer {
+            width: 200px;
+            height: 300px;
+        }
+
+        model-viewer::after {
+            content: " ";
+            width: 100%;
+            height: 100px;
+            background: red;
+            border-radius: 10px;
+            position: absolute;
+            top: 100px;
+            z-index: -1;
+        }
+    </style>
 </head>
+
 <body>
-    
     <header class="header">
         <h1 class="title"></h1>
         <nav class="navigation">
@@ -24,11 +43,15 @@
             </ul>
         </nav>
     </header>
-    <main class="">
-
-    </main>
+    <div class="wrapper">
+        <main class="">
+            <model-viewer src="lego_microphone.glb" ar shadow-intensity="1" camera-controls
+                touch-action="pan-y"></model-viewer>
+        </main>
+    </div>
     <footer class="footerForCredit">
         <p class="Credit"></p>
     </footer>
 </body>
+
 </html>

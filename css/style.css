@@ -1,24 +1,64 @@
 /* Imported fonts from Google fonts */
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-/* font-family: "Noto Sans", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+/* font-family: "Inter", sans-serif; */
 
 /* Global and menu Style */
 body{
-    font-family: "Noto Sans", sans-serif;
+    font-family: "Inter", sans-serif;
     background: #F5F5F5;
 }
 .wrapper{
     max-width: 1200px;
     margin: 0 auto;
 }
+main{
+    min-height: 100svh;
+}
 /* Header style */
-header{
-    height: 100px;
-    background: #FFCF00;
-    margin-bottom: 80px;
+.headerOut{
+    background: black;
+}
+.headerIn{
+padding: 25px 30px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.headerGradient{
+    height: 20px;
+    background: linear-gradient(180deg, rgba(128,104,0,1) 0%, rgba(128,104,0,1) 50%, rgba(191,155,0,1) 50%, rgba(191,155,0,1) 100%);
+}
+.title{
+    color: #fff;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+.titleBold{
+    color: #FFCF00;
+    font-weight: 600;
 }
 
+/* Navigation*/
+nav{
+   
+}
+.navList{
+    display: flex;
+}
+.navList a{
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    padding: 20px 30px;
+    font-size: 1.2rem;
+}
+.navList a:hover{
+    color: #FFCF00;
+    text-decoration: underline;
+}
 
 /* Index/Watch Style */
 
@@ -27,7 +67,10 @@ header{
 .characterList .characterCard{
     display: flex;
     margin: 0 auto;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
+}
+.characterList{
+    margin-top: 60px;
 }
 model-viewer {
     flex-basis: 300px;

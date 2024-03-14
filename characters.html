@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
     <meta charset="UTF-8">
@@ -10,7 +11,8 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 
-    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"
+        defer></script>
     <style>
         model-viewer {
             width: 200px;
@@ -28,12 +30,13 @@
         }
     </style>
 </head>
+
 <body>
 
     <!-- Header and Navigation Start -->
-    <header class="header">
-        <div class="wrapper">
-            <h1 class="title"></h1>
+    <header class="headerOut">
+        <div class="wrapper headerIn">
+            <h1 class="title">Lego <span class="titleBold">Movie</span></h1>
             <nav class="navigation">
                 <ul class="navList">
                     <li><a href="#">Link1</a></li>
@@ -43,48 +46,94 @@
             </nav>
         </div>
     </header>
+    <div class="headerGradient">
+
+    </div>
     <!-- Header and Navigation End -->
 
-    
+
     <div class="wrapper"> <!-- Wrapper Start-->
+        <main>
+            <!-- Section for names and descriptions of the Characters Start-->
+            <section class="characterList">
 
-        <!-- Section for names and descriptions of the Characters Start-->
-        <section class="characterList">
+                <!-- Character cards Start-->
+                <article class="characterCard">
+                    <model-viewer src="LegoBase.glb" ar shadow-intensity="1" camera-controls
+                        touch-action="pan-y"></model-viewer>
+                    <section class="texts">
+                        <p class="name">
+                            <span class="bold">Henry</span> LastName
+                        </p>
+                        <p class="description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi pariatur voluptas ullam
+                            ipsum rerum beatae ut quam vel asperiores
+                            sequi soluta iste adipisci blanditiis quis odit veritatis incidunt fuga laboriosam animi
+                            laborum quia expedita, tempore eaque! Dolor
+                            excepturi provident esse ab libero ullam unde delectus temporibus vel voluptatem? Quae,
+                            obcaecati?
+                        </p>
+                    </section>
+                </article>
 
-            <!-- Character cards Start-->
-            <article class="characterCard">
-                <model-viewer src="LegoBase.glb" ar shadow-intensity="1" camera-controls
-                touch-action="pan-y"></model-viewer>
-                <section class="texts">
-                    <p class="name">
-                        <span class="bold">Henry</span> LastName
-                    </p>
-                    <p class="description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi pariatur voluptas ullam ipsum rerum beatae ut quam vel asperiores
-                         sequi soluta iste adipisci blanditiis quis odit veritatis incidunt fuga laboriosam animi laborum quia expedita, tempore eaque! Dolor
-                          excepturi provident esse ab libero ullam unde delectus temporibus vel voluptatem? Quae, obcaecati?
-                    </p>
-                </section>
-            </article>
+                <article class="characterCard">
+                    <model-viewer src="LegoBase.glb" ar shadow-intensity="1" camera-controls
+                        touch-action="pan-y"></model-viewer>
+                    <section class="texts">
+                        <p class="name">
+                            <span class="bold">Caleb</span> LastName
+                        </p>
+                        <p class="description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi pariatur voluptas ullam
+                            ipsum rerum beatae ut quam vel asperiores
+                            sequi soluta iste adipisci blanditiis quis odit veritatis incidunt fuga laboriosam animi
+                            laborum quia expedita, tempore eaque! Dolor
+                            excepturi provident esse ab libero ullam unde delectus temporibus vel voluptatem? Quae,
+                            obcaecati?
+                        </p>
+                    </section>
+                </article>
 
-            <article class="characterCard">
-                <model-viewer src="LegoBase.glb" ar shadow-intensity="1" camera-controls
-                touch-action="pan-y"></model-viewer>
-                <section class="texts">
-                    <p class="name">
-                        <span class="bold">Caleb</span> LastName
-                    </p>
-                    <p class="description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi pariatur voluptas ullam ipsum rerum beatae ut quam vel asperiores
-                         sequi soluta iste adipisci blanditiis quis odit veritatis incidunt fuga laboriosam animi laborum quia expedita, tempore eaque! Dolor
-                          excepturi provident esse ab libero ullam unde delectus temporibus vel voluptatem? Quae, obcaecati?
-                    </p>
-                </section>
-            </article>
+                <article class="characterCard">
+                    <model-viewer src="LegoBase.glb" ar shadow-intensity="1" camera-controls
+                        touch-action="pan-y"></model-viewer>
+                    <section class="texts">
+                        <p class="name">
+                            <span class="bold">Caleb</span> LastName
+                        </p>
+                        <p class="description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi pariatur voluptas ullam
+                            ipsum rerum beatae ut quam vel asperiores
+                            sequi soluta iste adipisci blanditiis quis odit veritatis incidunt fuga laboriosam animi
+                            laborum quia expedita, tempore eaque! Dolor
+                            excepturi provident esse ab libero ullam unde delectus temporibus vel voluptatem? Quae,
+                            obcaecati?
+                        </p>
+                    </section>
+                </article>
 
-            <!-- Character cards End-->
+                <article class="characterCard">
+                    <model-viewer src="LegoBase.glb" ar shadow-intensity="1" camera-controls
+                        touch-action="pan-y"></model-viewer>
+                    <section class="texts">
+                        <p class="name">
+                            <span class="bold">Caleb</span> LastName
+                        </p>
+                        <p class="description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi pariatur voluptas ullam
+                            ipsum rerum beatae ut quam vel asperiores
+                            sequi soluta iste adipisci blanditiis quis odit veritatis incidunt fuga laboriosam animi
+                            laborum quia expedita, tempore eaque! Dolor
+                            excepturi provident esse ab libero ullam unde delectus temporibus vel voluptatem? Quae,
+                            obcaecati?
+                        </p>
+                    </section>
+                </article>
 
-        </section>
+                <!-- Character cards End-->
+
+            </section>
+        </main>
 
         <!-- Section for names and descriptions of the Characters End-->
     </div> <!-- Wrapper End-->
@@ -93,4 +142,5 @@
         <p class="Credit wrapper">blablabla</p>
     </footer>
 </body>
+
 </html>

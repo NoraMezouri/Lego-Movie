@@ -8,22 +8,26 @@ body{
     font-family: "Inter", sans-serif;
     background: #F5F5F5;
 }
+main{
+    min-height: calc(100svh - 166px);
+}
+a{
+    text-decoration: none;
+}
 .wrapper{
     max-width: 1200px;
     margin: 0 auto;
-}
-main{
-    min-height: 100svh;
 }
 /* Header style */
 .headerOut{
     background: black;
 }
 .headerIn{
-padding: 25px 30px;
+height: 110px;
 display: flex;
 justify-content: space-between;
 align-items: center;
+padding: 0 30px;
 }
 .headerGradient{
     height: 20px;
@@ -51,7 +55,6 @@ nav{
 .navList a{
     color: #fff;
     display: block;
-    text-decoration: none;
     padding: 20px 30px;
     font-size: 1.2rem;
 }
@@ -88,6 +91,7 @@ model-viewer::after {
     background: rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     position: absolute;
+    top: 100px;
     z-index: -1;
 }
 .characterList .characterCard .texts{

@@ -153,25 +153,37 @@ flex-direction: column;
     display: block;
 }
 
-
 /* Footer */
 .footerForCredit{
     background: black;
     color: white;
-    padding: 10px 0;
+    padding: 40px 0 70px 0px;
     margin-top: 50px;
 }
 .credit{
     display: flex;
+    justify-content: space-around;
 }
+.profile{
+    display: flex;
+}    
 .profile figure{
-    width: 100px;
+    width: 70px;
 }
 .profile img{
     width: 100%;
 }
 .profileText{
-    display: block;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
+    font-size: 1rem;
+    justify-content:center;
+    gap: 10px;
+    height: 100%;
+    padding-left: 25px;
+}
+.profile a{
+    color: #fff;
+    text-decoration: underline;
 }

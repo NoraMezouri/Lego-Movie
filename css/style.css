@@ -4,6 +4,9 @@
 /* font-family: "Inter", sans-serif; */
 
 /* Global and menu Style */
+.bold{
+    font-weight: bold;
+}
 body{
     font-family: "Inter", sans-serif;
     background: #F5F5F5;
@@ -103,8 +106,6 @@ display: flex;
 justify-content: center;
 flex-direction: column;
 }
-
-
 .characterList .characterCard .name{
     font-size: 2.5rem;
     width: 100%;
@@ -116,8 +117,41 @@ flex-direction: column;
 .characterList .characterCard .texts .description{
     width: 100%;
 }
-/* Storyboard Style */
 
+/* Storyboard Style */
+.btsHeader{
+    font-size: 4rem;
+    width: 100%;
+    text-align: center;
+    margin: 30px;
+    font-weight: 600;
+}
+.storyboard{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+.sbImg{
+    width: 50%;
+    padding: 10px 20px;
+    display: block;
+    box-sizing: border-box;
+}
+.sbImg img{
+    width: 100%;
+}
+.manuscript{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.manuscript embed{
+    width: 80%;
+    height: 90svh;
+    display: block;
+}
 
 
 /* Footer */
@@ -125,4 +159,19 @@ flex-direction: column;
     background: black;
     color: white;
     padding: 10px 0;
+    margin-top: 50px;
+}
+.credit{
+    display: flex;
+}
+.profile figure{
+    width: 100px;
+}
+.profile img{
+    width: 100%;
+}
+.profileText{
+    display: block;
+    flex-direction: column;
+    justify-content: space-between;
 }
